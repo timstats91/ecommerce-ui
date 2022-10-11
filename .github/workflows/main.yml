@@ -27,7 +27,7 @@ jobs:
       
       # Setup NodeJS in our environment
       - name: Seup Node.js environment
-        run: actions/setup-node@v16.17.0
+        run: actions/setup-node@v2.1.2
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
