@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1 class="margin-bottom-50">{{ msg }}</h1>
+    <img alt="Vue logo" src="../assets/logo.png">
     <p>
       You have successfully set up CI/CD with GitHub Actions!
     </p>
