@@ -4,29 +4,29 @@
   </div>
   <div class="container">
     <div class="row">
-        <div class="col-3"></div>
-        <form action="" class="form-group col-6">
+        <div class="col-md-3 col-0"></div>
+        <form action="" class="form-group col-md-6 col-12">
             <div class="margin-bottom-20">
-                <label for="">Category Name</label>
-                <input type="text" class="form-control" v-model="categoryName" />
+                <label for="cat-name">Category Name</label>
+                <input type="text" class="form-control" id="cat-name" v-model="categoryName" />
             </div>
             <div class="margin-bottom-20">
                 <label for="">Category Description</label>
-                <textarea type="text" class="form-control" v-model="description" />
+                <textarea type="text" class="form-control" id="cat-des" v-model="description" />
             </div>
             <div class="margin-bottom-20">
                 <label for="">Category Image URL</label>
-                <input type="text" class="form-control" v-model="imageUrl" />
+                <input type="text" class="form-control" id="cat-image" v-model="imageUrl" />
             </div>
-            <button type="submit" class="btn btn-primary" @click="addCategory">Sumbit</button>
+            <button type="button" class="btn btn-primary" v-on:click="addCategory">Sumbit</button>
         </form>
-        <div class="col-3"></div>
+        <div class="col-md-3 col-0"></div>
     </div>
   </div>
 </template>
 
 <script>
-const axios = require("axios")
+const axios = require("axios").default
 const sweetalert = require("sweetalert")
 export default {
     data() {

@@ -2,9 +2,15 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
+    <router-link to="/categories">View All Categories</router-link> |
     <router-link to="/admin/category/add">Add Category</router-link>
   </nav>
   <router-view/>
+  <footer style="margin-top: auto;">
+    <div>
+      <p>&copy; CompSciGear.com</p>
+    </div>
+  </footer>
 </template>
 
 <style>

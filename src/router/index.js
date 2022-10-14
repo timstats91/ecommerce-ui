@@ -17,11 +17,19 @@ const routes = [
   },
   {
     path: '/admin/category/add',
-    name: 'addcategory',
+    name: 'addCategory',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Category/AddCategory.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Category/AddCategoryView.vue')
+  },
+  {
+    path: '/categories',
+    name: 'allCategories',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Category/CategoryView.vue')
   }
 ]
 
