@@ -2,7 +2,7 @@
   <div class="add-category margin-bottom-50">
     <h1>Add a Category</h1>
   </div>
-  <div class="container">
+  <div class="container margin-bottom-50">
     <div class="row">
         <div class="col-md-3 col-0"></div>
         <form action="" class="form-group col-md-6 col-12">

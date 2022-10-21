@@ -16,7 +16,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
-    path: '/admin/category/add',
+    path: '/admin/categories/add',
     name: 'addCategory',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -24,13 +24,37 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Category/AddCategoryView.vue')
   },
   {
-    path: '/categories',
+    path: '/admin/categories',
     name: 'allCategories',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Category/CategoryView.vue')
-  }
+  },
+  {
+    path: '/admin/products/add',
+    name: 'addProduct',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Product/AddProductView.vue')
+  },
+  {
+    path: '/admin/products',
+    name: 'allProducts',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Product/ProductView.vue')
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/AdminView.vue')
+  },
 ]
 
 const router = createRouter({

@@ -1,11 +1,12 @@
 <template>
   <div class="hello">
     <h1 class="margin-bottom-50">{{ msg }}</h1>
-    <img alt="Vue logo" src="../assets/logo.png">
-    <p>
-      You have successfully set up CI/CD with GitHub Actions!
-    </p>
-    
+    <p>Please sign in to get started.</p>
+    <router-link :to="{name: 'admin'}" class="btn btn-green margin-bottom-50">
+      Sign In
+    </router-link>
+    <br />
+    <img alt="Vue logo" src="../assets/logo.png" class="margin-bottom-50">
   </div>
 </template>
 
@@ -31,7 +32,5 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-a {
-  color: #42b983;
-}
+
 </style>
