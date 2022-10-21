@@ -63,7 +63,7 @@ export default {
                 imageUrl: this.imageUrl,
                 price: this.price,
             }
-            const baseUrl = "http://localhost:8080"
+            const baseUrl = "http://ecommerceapi-env.eba-xcpssugi.us-east-1.elasticbeanstalk.com"
             await axios({
                 method: 'post',
                 url: `${baseUrl}/product/add`,

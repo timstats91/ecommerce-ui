@@ -30,7 +30,7 @@ export default {
   },
   data() {
     return {
-      baseURL: "http://localhost:8080/",
+      baseURL: "http://ecommerceapi-env.eba-xcpssugi.us-east-1.elasticbeanstalk.com/",
       products: [],
       categories: [],
     }

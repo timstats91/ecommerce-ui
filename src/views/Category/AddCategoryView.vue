@@ -44,7 +44,7 @@ export default {
                 description: this.description,
                 imageUrl: this.imageUrl
             }
-            const baseUrl = "http://localhost:8080"
+            const baseUrl = "http://ecommerceapi-env.eba-xcpssugi.us-east-1.elasticbeanstalk.com"
             axios({
                 method: 'post',
                 url: `${baseUrl}/category/create`,
