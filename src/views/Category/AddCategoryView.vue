@@ -47,7 +47,7 @@ export default {
             const baseUrl = "http://ecommerceapi-env.eba-xcpssugi.us-east-1.elasticbeanstalk.com"
             axios({
                 method: 'post',
-                url: `${baseUrl}/category/create`,
+                url: `${baseUrl}/category/create/`,
                 data: JSON.stringify(newCategory),
                 headers: {
                     'Content-Type': 'application/json'
