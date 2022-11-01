@@ -7,7 +7,10 @@
         <h5 class="card-title">{{ product.name }}</h5>
         <p class="card-text">{{ product.description }}</p>
         <p class="card-text">${{ product.price }}</p>
-        <a href="" class="btn btn-green">Go somewhere</a>
+        <router-link :to="{name: 'editProduct', params: {id: product.id} }">
+            <button href="" class="btn btn-green">Edit</button>
+        </router-link>
+        <button href="" class="btn btn-green-solid">Delete</button>
     </div>
   </div>
 </template>
@@ -28,7 +31,7 @@ export default {
 
 <style>
 .card-img-top {
-    max-height: 220px;
+    height: 220px;
     object-fit: cover;
 }
 </style>

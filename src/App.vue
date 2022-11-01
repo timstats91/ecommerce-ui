@@ -7,6 +7,7 @@
     <router-link to="/admin/category/add">Add Category</router-link>
   </nav> -->
   <router-view
+      :key="$route.fullPath"
       v-if="products && categories"
       :baseURL="baseURL"
       :products="products"
@@ -30,7 +31,8 @@ export default {
   },
   data() {
     return {
-      baseURL: "http://ecommerceapi-env.eba-xcpssugi.us-east-1.elasticbeanstalk.com/",
+      //baseURL: "http://ecommerceapi-env.eba-xcpssugi.us-east-1.elasticbeanstalk.com/",
+      baseURL: "http://localhost:8080/",
       products: [],
       categories: [],
     }
@@ -93,7 +95,12 @@ nav a.router-link-exact-active {
 .margin-right-20 {
     margin-right: 20px;
 }
-
+.btn {
+    background-color: white;
+}
+.btn:focus {
+    border: none;
+}
 .btn-green {
   border: 1px solid #42b983;
   color: #42b983;
@@ -102,6 +109,15 @@ nav a.router-link-exact-active {
   border: 1px solid #42b983;
   background-color: #42b983;
   color: white;
+}
+.btn-green-solid {
+  border: 1px solid #42b983;
+  background-color: #42b983;
+  color: white;
+  margin-left: 1em;
+}
+.btn-green-solid:hover {
+  background-color: #2e815b;
 }
 .med-text-size {
   font-size: 1.5em;

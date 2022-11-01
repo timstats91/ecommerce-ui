@@ -18,7 +18,7 @@
                 <label for="">Category Image URL</label>
                 <input type="text" class="form-control" id="cat-image" v-model="imageUrl" />
             </div>
-            <button type="button" class="btn btn-primary" v-on:click="addCategory">Sumbit</button>
+            <button type="button" class="btn btn-green" v-on:click="addCategory">Sumbit</button>
         </form>
         <div class="col-md-3 col-0"></div>
     </div>
@@ -44,7 +44,8 @@ export default {
                 description: this.description,
                 imageUrl: this.imageUrl
             }
-            const baseUrl = "http://ecommerceapi-env.eba-xcpssugi.us-east-1.elasticbeanstalk.com"
+            //const baseUrl = "http://ecommerceapi-env.eba-xcpssugi.us-east-1.elasticbeanstalk.com"
+            const baseUrl = "http://localhost:8080"
             axios({
                 method: 'post',
                 url: `${baseUrl}/category/create/`,

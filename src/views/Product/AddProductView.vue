@@ -28,7 +28,7 @@
                 <label for="prod-image">Product Image URL</label>
                 <input type="text" class="form-control" id="prod-image" v-model="imageUrl" />
             </div>
-            <button type="submit" class="btn btn-primary" v-on:click="addProduct">Sumbit</button>
+            <button type="submit" class="btn btn-green" v-on:click="addProduct">Sumbit</button>
         </form>
         <div class="col-md-3 col-0"></div>
     </div>
@@ -63,7 +63,8 @@ export default {
                 imageUrl: this.imageUrl,
                 price: this.price,
             }
-            const baseUrl = "http://ecommerceapi-env.eba-xcpssugi.us-east-1.elasticbeanstalk.com"
+            //const baseUrl = "http://ecommerceapi-env.eba-xcpssugi.us-east-1.elasticbeanstalk.com"
+            const baseUrl = "http://localhost:8080"
             await axios({
                 method: 'post',
                 url: `${baseUrl}/product/add/`,

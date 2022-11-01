@@ -18,42 +18,37 @@ const routes = [
   {
     path: '/admin/categories/add',
     name: 'addCategory',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Category/AddCategoryView.vue')
+    component: () => import('../views/Category/AddCategoryView.vue')
+  },
+  {
+    path: '/admin/categories/:id',
+    name: 'editCategory',
+    component: () => import('../views/Category/EditCategoryView.vue')
   },
   {
     path: '/admin/categories',
     name: 'allCategories',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Category/CategoryView.vue')
+    component: () => import('../views/Category/CategoryView.vue')
   },
   {
     path: '/admin/products/add',
     name: 'addProduct',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Product/AddProductView.vue')
+    component: () => import('../views/Product/AddProductView.vue')
+  },
+  {
+    path: '/admin/products/:id',
+    name: 'editProduct',
+    component: () => import('../views/Product/EditProductView.vue')
   },
   {
     path: '/admin/products',
     name: 'allProducts',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Product/ProductView.vue')
+    component: () => import('../views/Product/ProductView.vue')
   },
   {
     path: '/admin',
     name: 'admin',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AdminView.vue')
+    component: () => import('../views/AdminView.vue')
   },
 ]
 
